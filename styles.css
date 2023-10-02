@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+
+p{
+    color: #2D3748;
+    font-size: 18px;
+}
+
+.container{
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1.5fr 6fr 0.25fr;
+    grid-template-areas: 
+    "header header"
+    "body sidebar"
+    "footer footer"
+    ;
+}
+header{
+    grid-area: header;
+    background-color: #63B3ED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+}
+
+header p{
+    color: #FFFFFF;
+}
+
+
+main{
+    grid-area: body;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+img{
+    height: 200px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+.profile{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: #FFFFFF solid 5px;
+}
+
+.image-1{
+    float: right;
+}
+
+.image-2{
+    float: left;
+}
+
+.main-1{
+    padding: 100px;
+}
+
+.main-1::after {
+    content: "";
+    display: block;
+    border-top: 1px solid #ccc; /* Adjust the color and style as needed */
+    margin-top: 150px; /* Optional margin for spacing */
+  }
+
+.main-2{
+    padding: 100px;
+}
+
+.main-1 h2{
+    font-size: 32px;
+    color: #48BB78;
+}
+
+.main-2 h2{
+    font-size: 32px;
+    color: #48BB78;
+}
+
+.main-1 h3{
+    color: #718096;
+}
+
+.main-2 h3{
+    color: #718096;
+}
+
+.main-1 p{
+    margin-top: 15px;
+}
+
+.main-2 p{
+    margin-top: 15px;
+}
+
+.main-1 h3{
+    margin-top: 15px;
+}
+
+.main-2 h3{
+    margin-top: 15px;
+}
+
+
+
+
+aside{
+    grid-area: sidebar;
+    padding: 100px;
+    display: grid;
+    grid-template-rows: repeat(3, 175px);
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    color: #4299E1;
+}
+
+.about-me{
+    background-color: #e2e8f0;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-me h3{
+    color: #000000;
+}
+
+.social-media h3{
+    color:  #48BB78;
+}
+
+.archives h3{
+    color:  #48BB78;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    background-color: #2C5282 ;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: #FFFFFF;
+}
